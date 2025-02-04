@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>D1</projectKey>
+    <exportDate>2024-12-09 12:01:59 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="202381108" key="D1-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mourya Sai Chandra</createdBy>
+            <createdOn>2024-11-14 11:36:06 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>D1-11</key>
+                    <summary><![CDATA[Login validation]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Opencart]]></name>
+            <objective><![CDATA[To Validate the app]]></objective>
+            <owner>712020:630e79d8-9dab-4a8b-9a18-45a4193f710f</owner>
+            <precondition><![CDATA[1. Chrome to be installed<br>2. Enter the Url]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[1. Enter the username<br>2. enter the password<br>3. Click on Submit]]></description>
+                        <expectedResult><![CDATA[Login Successfull]]></expectedResult>
+                        <testData><![CDATA[Username: Mourya<br>Password: ooo<br><br>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="202386623" key="D1-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Mourya Sai Chandra</createdBy>
+            <createdOn>2024-11-14 12:11:41 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>D1-12</key>
+                    <summary><![CDATA[Add to cart]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[add to cart]]></name>
+            <objective><![CDATA[Adding product to cart&nbsp;]]></objective>
+            <owner>712020:630e79d8-9dab-4a8b-9a18-45a4193f710f</owner>
+            <precondition><![CDATA[Used in chrome or mobile application]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Add Quantity <br>Add to cart <br><br>]]></description>
+                        <expectedResult><![CDATA[Added to cart successfully]]></expectedResult>
+                        <testData><![CDATA[Quantity: 1<br>Add to cart]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
