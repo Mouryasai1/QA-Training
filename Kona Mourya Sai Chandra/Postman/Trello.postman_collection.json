@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "b6f4b2dd-e412-44a9-9675-4768aed560d3",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39597451"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/1OU7IFC0/{field}?key=64d706cd96fc154bb847fbcc8ac24ea0&token=ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"1OU7IFC0",
+						"{field}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "64d706cd96fc154bb847fbcc8ac24ea0"
+						},
+						{
+							"key": "token",
+							"value": "ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.trello.com/1/boards/?name= MSC &key=64d706cd96fc154bb847fbcc8ac24ea0&token=ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"id\",res.id)"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= MSC &key=64d706cd96fc154bb847fbcc8ac24ea0&token=ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " MSC "
+						},
+						{
+							"key": "key",
+							"value": "64d706cd96fc154bb847fbcc8ac24ea0"
+						},
+						{
+							"key": "token",
+							"value": "ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://api.trello.com/1/boards/?name= MSC &key=64d706cd96fc154bb847fbcc8ac24ea0&token=ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?name= MSC &key=64d706cd96fc154bb847fbcc8ac24ea0&token=ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": " MSC "
+								},
+								{
+									"key": "key",
+									"value": "64d706cd96fc154bb847fbcc8ac24ea0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA24c0b3a418feec9af39e2e6930584cb4b20a9afd8b5254dbede4ef47ecb27aa7E115A899"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1567"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Nov 2024 13:35:12 GMT"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Surrogate-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, must-revalidate, no-cache, no-store"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00"
+						},
+						{
+							"key": "X-Trello-Version",
+							"value": "1.315947.0"
+						},
+						{
+							"key": "X-Trello-Environment",
+							"value": "Production"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Max",
+							"value": "100"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Token-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Interval-Ms",
+							"value": "600000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Max",
+							"value": "7200000"
+						},
+						{
+							"key": "X-Rate-Limit-Db-Query-Time-Remaining",
+							"value": "7199990"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Max",
+							"value": "300"
+						},
+						{
+							"key": "X-Rate-Limit-Api-Key-Remaining",
+							"value": "299"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Accept, Content-Type"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Interval-Ms",
+							"value": "10000"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Max",
+							"value": "375"
+						},
+						{
+							"key": "X-Rate-Limit-Member-Remaining",
+							"value": "374"
+						},
+						{
+							"key": "X-Server-Time",
+							"value": "1731072912240"
+						},
+						{
+							"key": "X-Trello-Api-Org-Selected",
+							"value": "true"
+						},
+						{
+							"key": "Server",
+							"value": "AtlassianEdge"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Atl-Traceid",
+							"value": "1d52489fa2bd44a1b4e6522508a3ec00"
+						},
+						{
+							"key": "Atl-Request-Id",
+							"value": "1d52489f-a2bd-44a1-b4e6-522508a3ec00"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; preload"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\": [{\"url\": \"https://dz8aopenkvv6s.cloudfront.net\"}], \"group\": \"endpoint-1\", \"include_subdomains\": true, \"max_age\": 600}"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"failure_fraction\": 0.001, \"include_subdomains\": true, \"max_age\": 600, \"report_to\": \"endpoint-1\"}"
+						},
+						{
+							"key": "Server-Timing",
+							"value": "atl-edge;dur=521,atl-edge-internal;dur=3,atl-edge-upstream;dur=519,atl-edge-pop;desc=\"aws-eu-central-1\""
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 d49c4c54e333bcf876442565d33d599c.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAA51-P3"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "6C33FdkUTKDxvvd4l2qyzC92TpCekDEioRPv6Qg0tERaQVDrd3aOWw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"672e138fc49a7441e0181939\",\n    \"name\": \" MSC \",\n    \"desc\": \"\",\n    \"descData\": null,\n    \"closed\": false,\n    \"idOrganization\": \"672de2c04242cf058815e4d8\",\n    \"idEnterprise\": null,\n    \"pinned\": false,\n    \"url\": \"https://trello.com/b/B3rTRxgf/msc\",\n    \"shortUrl\": \"https://trello.com/b/B3rTRxgf\",\n    \"prefs\": {\n        \"permissionLevel\": \"private\",\n        \"hideVotes\": false,\n        \"voting\": \"disabled\",\n        \"comments\": \"members\",\n        \"invitations\": \"members\",\n        \"selfJoin\": true,\n        \"cardCovers\": true,\n        \"cardCounts\": false,\n        \"isTemplate\": false,\n        \"cardAging\": \"regular\",\n        \"calendarFeedEnabled\": false,\n        \"hiddenPluginBoardButtons\": [],\n        \"switcherViews\": [\n            {\n                \"viewType\": \"Board\",\n                \"enabled\": true\n            },\n            {\n                \"viewType\": \"Table\",\n                \"enabled\": true\n            },\n            {\n                \"viewType\": \"Calendar\",\n                \"enabled\": false\n            },\n            {\n                \"viewType\": \"Dashboard\",\n                \"enabled\": false\n            },\n            {\n                \"viewType\": \"Timeline\",\n                \"enabled\": false\n            },\n            {\n                \"viewType\": \"Map\",\n                \"enabled\": false\n            }\n        ],\n        \"background\": \"blue\",\n        \"backgroundColor\": \"#0079BF\",\n        \"backgroundImage\": null,\n        \"backgroundTile\": false,\n        \"backgroundBrightness\": \"dark\",\n        \"sharedSourceUrl\": null,\n        \"backgroundImageScaled\": null,\n        \"backgroundBottomColor\": \"#0079BF\",\n        \"backgroundTopColor\": \"#0079BF\",\n        \"canBePublic\": false,\n        \"canBeEnterprise\": false,\n        \"canBeOrg\": false,\n        \"canBePrivate\": false,\n        \"canInvite\": true\n    },\n    \"labelNames\": {\n        \"green\": \"\",\n        \"yellow\": \"\",\n        \"orange\": \"\",\n        \"red\": \"\",\n        \"purple\": \"\",\n        \"blue\": \"\",\n        \"sky\": \"\",\n        \"lime\": \"\",\n        \"pink\": \"\",\n        \"black\": \"\",\n        \"green_dark\": \"\",\n        \"yellow_dark\": \"\",\n        \"orange_dark\": \"\",\n        \"red_dark\": \"\",\n        \"purple_dark\": \"\",\n        \"blue_dark\": \"\",\n        \"sky_dark\": \"\",\n        \"lime_dark\": \"\",\n        \"pink_dark\": \"\",\n        \"black_dark\": \"\",\n        \"green_light\": \"\",\n        \"yellow_light\": \"\",\n        \"orange_light\": \"\",\n        \"red_light\": \"\",\n        \"purple_light\": \"\",\n        \"blue_light\": \"\",\n        \"sky_light\": \"\",\n        \"lime_light\": \"\",\n        \"pink_light\": \"\",\n        \"black_light\": \"\"\n    },\n    \"limits\": {}\n}"
+				}
+			]
+		}
+	]
+}
